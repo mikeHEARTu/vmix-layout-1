@@ -8,6 +8,7 @@ body
 	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
 	font-size: 3.3vh;
+	overflow: hidden;
 }
 .imageBG
 {
@@ -19,11 +20,29 @@ body
 	height:100%;
 	overflow: hidden;
 	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-	background:url("https://source.unsplash.com/featured/?sky");
+	background:linear-gradient(to bottom right, rgba(41, 128, 185,0.5), rgba(39, 174, 96,0.85)), url("https://source.unsplash.com/featured/?landscape,wallpaper");
 	background-size: cover;
 	background-position: center center;
 
-	animation: fadeIn 2s 0s ease-out backwards;
+	animation: fadeIn 2s 0s ease-out backwards, fadeIn 2s 28s ease-in reverse forwards;
+}
+.btTwitter
+{
+	background:linear-gradient(to bottom right, rgba(142, 68, 173,0.5), rgba(41, 128, 185,0.85)), url("https://source.unsplash.com/featured/?happy,wallpaper");
+	background-size: cover;
+	background-position: center center;
+}
+.btVGBC
+{
+	background:linear-gradient(to bottom right, rgba(192, 57, 43,0.5), rgba(142, 68, 173,0.85)), url(img/san-andreas-screenshot.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.btHumble
+{
+	background:linear-gradient(to bottom right, rgba(211, 84, 0,0.5), rgba(192, 57, 43,0.85)), url(img/my-friend-is-pedro-screenshot.jpg);
+	background-size: cover;
+	background-position: center center;
 }
 .textContainer
 {
@@ -34,15 +53,15 @@ body
 	height:100%;
 	width:49%;
 	margin-left:46%;
-	text-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.5);
-
-	animation: fadeInRight 1s 2s ease-out backwards;
+	/* text-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.5); */
 }
 .textName
 {
 	font-size: 3em;
 	font-weight: 900;
 	font-style: italic;
+
+	animation: fadeInRight 1s 1s ease-out backwards, fadeOutRight 1s 27.5s ease-in forwards;
 }
 .textURL
 {
@@ -51,6 +70,12 @@ body
 	font-style: italic;
 	margin-top: 1vh;
 	margin-bottom:3vh;
+
+	animation: fadeInRight 1s 1.25s ease-out backwards, fadeOutRight 1s 27.75s ease-in forwards;
+}
+.textDescription
+{
+	animation: fadeInRight 1s 1.5s ease-out backwards, fadeOutRight 1s 28s ease-in forwards;
 }
 
 @keyframes fadeIn
@@ -58,6 +83,7 @@ body
     from
 	{
 		filter:opacity(0);
+		transform: translateX(10vh);
 	}
 	to
 	{
@@ -68,11 +94,23 @@ body
 {
     from
 	{
+		transform: translateX(-2vh);
 		filter:opacity(0);
-		transform: translateX(-1vh);
 	}
 	to
 	{
 		filter:opacity(1);
+	}
+}
+@keyframes fadeOutRight
+{
+    from
+	{
+		filter:opacity(1);
+	}
+	to
+	{
+		transform: translateX(2vh);
+		filter:opacity(0);
 	}
 }

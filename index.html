@@ -8,14 +8,52 @@
 	<meta name="author" content="Michael Macasiano">
 	<title>Video games are awful</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a245c13cca.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-	<div class="imageBG">
+<script>
+	var slideIndex = 0;
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("imageBG");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex = 1}
+	x[slideIndex-1].style.display = "block";
+	setTimeout(carousel, 30000); // Change image every 30 seconds
+	}
+</script>
+
+<body onload="carousel()">
+	<div class="imageBG bgTwitch">
 		<div class="textContainer">
 			<div class="textName">aznmike</div>
-			<div class="textURL">twitch.tv/aznmike</div>
-			<div class="textDescription">We'll be right back or something. Idk. Who writes these things?</div>
+			<div class="textURL"><i class="fab fa-twitch"></i> /aznmike</div>
+			<div class="textDescription">We'll be right back or something. Or the stream is starting. Or maybe it's ending. Idk. Who writes these things?</div>
+		</div>
+	</div>
+	<div class="imageBG btTwitter">
+		<div class="textContainer">
+			<div class="textName">Social</div>
+			<div class="textURL"><i class="fab fa-twitter"></i> @mikeHEARTu</div>
+			<div class="textDescription">I tweet sometimes. Insert professional and compelling reasons to follow me.</div>
+		</div>
+	</div>
+	<div class="imageBG btVGBC">
+		<div class="textContainer">
+			<div class="textName">VGBC</div>
+			<div class="textURL"><i class="fas fa-podcast"></i> VideoGameBook.Club</div>
+			<div class="textDescription">Nelson and I played and talked about San Andreas. If you can make your podcast while everyone else is... losing... theirs... What?</div>
+		</div>
+	</div>
+	<div class="imageBG btHumble">
+		<div class="textContainer">
+			<div class="textName">Humble</div>
+			<div class="textURL"><i class="fas fa-exclamation-circle"></i> Humble Choice</div>
+			<div class="textDescription">#AD Pick up to ten games from a selection that includes My Friend is Pedro, Planet Coaster, F1 2019, and more.</div>
 		</div>
 	</div>
 </body>
