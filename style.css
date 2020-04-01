@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,600;1,900&display=swap');
 
 body
 {
@@ -59,7 +59,6 @@ body
 {
 	font-size: 3em;
 	font-weight: 900;
-	font-style: italic;
 
 	animation: fadeInRight 1s 1s ease-out backwards, fadeOutRight 1s 27.5s ease-in forwards;
 }
