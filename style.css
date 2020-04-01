@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;1,900&display=swap');
+
+body
+{
+	background: #ecf0f1;
+	color:#ecf0f1;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	font-size: 3.3vh;
+}
+.imageBG
+{
+	position: absolute;
+	top:0;
+	right:0;
+	width:1600px;
+	width:85%;
+	height:100%;
+	overflow: hidden;
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+	background:url("https://source.unsplash.com/featured/?sky");
+	background-size: cover;
+	background-position: center center;
+}
+.textContainer
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	height:100%;
+	width:50%;
+	margin-left:45%;
+	text-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.5);
+}
+.textName
+{
+	font-size: 3em;
+	font-weight: 900;
+	font-style: italic;
+}
+.textURL
+{
+	font-size: 1.5em;
+	font-weight: 600;
+	font-style: italic;
+}
+
+@keyframes fadeIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
