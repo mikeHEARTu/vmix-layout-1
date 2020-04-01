@@ -22,6 +22,8 @@ body
 	background:url("https://source.unsplash.com/featured/?sky");
 	background-size: cover;
 	background-position: center center;
+
+	animation: fadeIn 2s 0s ease-out backwards;
 }
 .textContainer
 {
@@ -30,9 +32,11 @@ body
 	justify-content: center;
 	align-content: center;
 	height:100%;
-	width:50%;
-	margin-left:45%;
+	width:49%;
+	margin-left:46%;
 	text-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.5);
+
+	animation: fadeInRight 1s 2s ease-out backwards;
 }
 .textName
 {
@@ -45,6 +49,8 @@ body
 	font-size: 1.5em;
 	font-weight: 600;
 	font-style: italic;
+	margin-top: 1vh;
+	margin-bottom:3vh;
 }
 
 @keyframes fadeIn
@@ -52,6 +58,18 @@ body
     from
 	{
 		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+@keyframes fadeInRight
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateX(-1vh);
 	}
 	to
 	{
