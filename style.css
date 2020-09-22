@@ -34,13 +34,13 @@ body
 }
 .btVGBC
 {
-	background:linear-gradient(to bottom right, rgba(192, 57, 43,0.5), rgba(142, 68, 173,0.85)), url(img/san-andreas-screenshot.jpg);
+	background:linear-gradient(to bottom right, rgba(192, 57, 43,0.5), rgba(142, 68, 173,0.85)), url(img/gta-iv-screenshot.jpg);
 	background-size: cover;
 	background-position: center center;
 }
 .btHumble
 {
-	background:linear-gradient(to bottom right, rgba(211, 84, 0,0.5), rgba(192, 57, 43,0.85)), url(img/my-friend-is-pedro-screenshot.jpg);
+	background:linear-gradient(to bottom right, rgba(211, 84, 0,0.5), rgba(192, 57, 43,0.85)), url(img/golf-with-your-friends-screenshot.jpg);
 	background-size: cover;
 	background-position: center center;
 }
